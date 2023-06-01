@@ -5,9 +5,9 @@ import streamlit as st
 model = pickle.load(open('Obesitas.sav','rb'))
 
 st.title('Prediksi Terkena Penyakit Obesitas')
-col = st.columns
+col1 = st.columns
 
-with col:
+with col1:
    ID = st.number_input('Nomor ID')
    Age	= st.number_input('Umur ')
    Gender = st.number_input('Jenis Kelamin Pasien')
